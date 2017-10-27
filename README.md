@@ -3,13 +3,13 @@ Maven archetype to create a dropwizard mircoservice
 
 Generate a Microservice template project. Includes tests at various levels;
 
-Unit Tests
-Integration Tests
- - JUnit (Developer Tests)
- - Cucumber (Stakeholder Tests)
+* Unit Tests
+* Integration Tests
+ * JUnit (Developer Tests)
+ * Cucumber (Stakeholder Tests)
 
 Build:
-man install
+mvn install
 
 Usage:
 mvn archetype:generate -DarchetypeGroupId=net.beyondcoding \
