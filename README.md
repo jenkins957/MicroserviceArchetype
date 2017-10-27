@@ -5,8 +5,8 @@ Generate a Microservice template project. Includes tests at various levels;
 
 Unit Tests
 Integration Tests
- * JUnit (Developer Tests)
- * Cucumber (Stakeholder Tests)
+ - JUnit (Developer Tests)
+ - Cucumber (Stakeholder Tests)
 
 Build:
 mvn install
