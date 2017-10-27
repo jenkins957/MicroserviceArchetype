@@ -5,7 +5,7 @@ Generate a Microservice template project. Includes tests at various levels;
 
 ## Unit Tests
 
-### Integration Tests
+## Integration Tests
  - JUnit (Developer Tests)
  - Cucumber (Stakeholder Tests)
 
