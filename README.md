@@ -9,10 +9,12 @@ Generate a Microservice template project. Includes tests at various levels;
  - JUnit (Developer Tests)
  - Cucumber (Stakeholder Tests)
 
-Build:
+### Build
+
 mvn install
 
-Usage:
+### Usage
+
 mvn archetype:generate -DarchetypeGroupId=net.beyondcoding \
 -DarchetypeArtifactId=MicroserviceArchetype \
 -DarchetypeVersion=1.0.0-SNAPSHOT \
