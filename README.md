@@ -1,7 +1,7 @@
 # MicroserviceArchetype
 Maven archetype to create a dropwizard mircoservice
 
-Generate a Microservice template project. Includes tests at various levels;
+Generate a Microservice template project. Includes test framework at various levels;
 
 ### Unit Tests
 
