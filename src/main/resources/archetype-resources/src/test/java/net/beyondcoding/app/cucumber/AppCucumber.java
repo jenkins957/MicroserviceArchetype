@@ -18,7 +18,7 @@ import cucumber.api.CucumberOptions;
 	"json:target/cucumber/cucumber-html-report/cucumber.json"
 }, features =
 {
-	"src/test/resources/net/weareact/app/features"
+	"src/test/resources/net/beyondcoding/app/features"
 }, tags =
 {
 	"~@cucumberIgnore", "@hello"
