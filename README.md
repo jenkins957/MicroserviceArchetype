@@ -3,8 +3,8 @@ Maven archetype to create a dropwizard mircoservice
 
 Generate a Microservice template project. Includes tests at various levels;
 
-* Unit Tests
-* Integration Tests
+Unit Tests
+Integration Tests
  * JUnit (Developer Tests)
  * Cucumber (Stakeholder Tests)
 
