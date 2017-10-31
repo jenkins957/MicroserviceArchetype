@@ -1,7 +1,7 @@
 /*
- * Copyright 2017
+ * Copyright 2017 http://www.beyondcoding.net
  */
-package net.beyondcoding.app.it;
+package ${package}.it;
 
 import javax.ws.rs.client.Client;
 import org.glassfish.jersey.client.JerseyClientBuilder;
@@ -10,8 +10,8 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.ClassRule;
 import io.dropwizard.testing.junit.DropwizardAppRule;
-import net.beyondcoding.app.App;
-import net.beyondcoding.app.AppConfiguration;
+import ${package}.App;
+import ${package}.AppConfiguration;
 
 /*
  * Integration Test - Starting up full app

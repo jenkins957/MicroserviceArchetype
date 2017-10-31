@@ -1,12 +1,8 @@
 /*
- * Copyright 2017
+ * Copyright 2017 http://www.beyondcoding.net
  */
-package net.beyondcoding.app;
+package ${package};
 
-/**
- *
- * @author mikej
- */
 import io.dropwizard.Application;
 import io.dropwizard.setup.Environment;
 

@@ -1,7 +1,7 @@
 /*
- * Copyright 2017
+ * Copyright 2017 http://www.beyondcoding.net
  */
-package net.beyondcoding.app;
+package ${package};
 
 import org.junit.Test;
 import static org.junit.Assert.*;

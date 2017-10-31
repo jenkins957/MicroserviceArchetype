@@ -1,7 +1,7 @@
 /*
- * Copyright 2017
+ * Copyright 2017 http://www.beyondcoding.net
  */
-package net.beyondcoding.app.cucumber;
+package ${package}.cucumber;
 
 import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
@@ -18,7 +18,7 @@ import cucumber.api.CucumberOptions;
 	"json:target/cucumber/cucumber-html-report/cucumber.json"
 }, features =
 {
-	"src/test/resources/net/beyondcoding/app/features"
+	"src/test/resources/features"
 }, tags =
 {
 	"~@cucumberIgnore", "@hello"

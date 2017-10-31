@@ -1,17 +1,13 @@
 /*
- * Copyright 2017
+ * Copyright 2017 http://www.beyondcoding.net
  */
-package net.beyondcoding.app;
+package ${package};
 
 import static org.junit.Assert.assertEquals;
 import org.junit.ClassRule;
 import org.junit.Test;
 import io.dropwizard.testing.junit.ResourceTestRule;
 
-/**
- *
- * @author mikej
- */
 public class HelloWorldResourceTest
 {
 	// Unit test, spinning up an in-memory Jersey Server

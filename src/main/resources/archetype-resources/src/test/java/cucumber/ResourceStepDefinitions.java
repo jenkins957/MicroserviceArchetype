@@ -1,19 +1,17 @@
 /*
- * Copyright 2017
+ * Copyright 2017 http://www.beyondcoding.net
  */
-package net.beyondcoding.app.cucumber;
+package ${package}.cucumber;
 
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import static org.junit.Assert.*;
-import net.beyondcoding.app.App;
-import net.beyondcoding.app.AppConfiguration;
+import ${package}.App;
+import ${package}.AppConfiguration;
 import javax.ws.rs.client.Client;
 import cucumber.api.java.en.Given;
 import io.dropwizard.client.JerseyClientBuilder;
-import io.dropwizard.testing.ConfigOverride;
 import io.dropwizard.testing.DropwizardTestSupport;
-import io.dropwizard.testing.ResourceHelpers;
 
 /**
  *
@@ -22,9 +20,7 @@ import io.dropwizard.testing.ResourceHelpers;
 public class ResourceStepDefinitions
 {
 	public static final DropwizardTestSupport<AppConfiguration> SUPPORT
-			= new DropwizardTestSupport<AppConfiguration>( App.class,
-					ResourceHelpers.resourceFilePath( "" ),
-					ConfigOverride.config( "server.applicationConnectors[0].port", "0" ) );
+			= new DropwizardTestSupport<AppConfiguration>( App.class, "");
 
 	private String result;
 

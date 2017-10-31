@@ -2,22 +2,22 @@
 		   xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype/1.0.0 http://maven.apache.org/xsd/archetype-1.0.0.xsd">
 	<id>MicroserviceArchetype</id>
 	<sources>
-		<source>src/main/java/net/beyondcoding/app/App.java</source>
-		<source>src/main/java/net/beyondcoding/app/AppMain.java</source>
-		<source>src/main/java/net/beyondcoding/app/AppHealthCheck.java</source>
-		<source>src/main/java/net/beyondcoding/app/AppConfiguration.java</source>
-		<source>src/main/java/net/beyondcoding/app/HelloWorldResource.java</source>
+		<source>src/main/java/App.java</source>
+		<source>src/main/java/AppMain.java</source>
+		<source>src/main/java/AppHealthCheck.java</source>
+		<source>src/main/java/AppConfiguration.java</source>
+		<source>src/main/java/HelloWorldResource.java</source>
 	</sources>
 	<testSources>
-		<source>src/test/java/net/beyondcoding/app/AppHealthCheckTest.java</source>
-		<source>src/test/java/net/beyondcoding/app/AppTest.java</source>
-		<source>src/test/java/net/beyondcoding/app/HelloWorldResourceTest.java</source>
-		<source>src/test/java/net/beyondcoding/app/cucumber/AppCucumber.java</source>
-		<source>src/test/java/net/beyondcoding/app/cucumber/ResourceStepDefinitions.java</source>
-		<source>src/test/java/net/beyondcoding/app/it/SayHelloTest.java</source>
+		<source>src/test/java/AppHealthCheckTest.java</source>
+		<source>src/test/java/AppTest.java</source>
+		<source>src/test/java/HelloWorldResourceTest.java</source>
+		<source>src/test/java/cucumber/AppCucumber.java</source>
+		<source>src/test/java/cucumber/ResourceStepDefinitions.java</source>
+		<source>src/test/java/it/SayHelloTest.java</source>
 	</testSources>
 	<testResources>
-		<resource>src/test/resources/net/beyondcoding/app/features/resource.feature</resource>
+		<resource>src/test/resources/features/resource.feature</resource>
 	</testResources>
 
 </archetype>

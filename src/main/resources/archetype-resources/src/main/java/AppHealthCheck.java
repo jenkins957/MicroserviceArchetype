@@ -1,14 +1,10 @@
 /*
- * Copyright 2017
+ * Copyright 2017 http://www.beyondcoding.net
  */
-package net.beyondcoding.app;
+package ${package};
 
 import com.codahale.metrics.health.HealthCheck;
 
-/**
- *
- * @author mikej
- */
 public class AppHealthCheck extends HealthCheck
 {
 	public AppHealthCheck()

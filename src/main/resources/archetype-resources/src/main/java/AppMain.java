@@ -1,12 +1,8 @@
 /*
- * Copyright 2017
+ * Copyright 2017 http://www.beyondcoding.net
  */
-package net.beyondcoding.app;
+package ${package};
 
-/**
- *
- * @author mikej
- */
 public class AppMain
 {
 	public static void main( final String[] args ) throws Exception
