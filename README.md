@@ -18,5 +18,5 @@ mvn install
 mvn archetype:generate -DarchetypeGroupId=net.beyondcoding \
 -DarchetypeArtifactId=MicroserviceArchetype \
 -DarchetypeVersion=1.0.0-SNAPSHOT \
--DgroupId=groupId \
--DartifactId=projectName
+-DgroupId=<groupId> \
+-DartifactId=<projectName>
