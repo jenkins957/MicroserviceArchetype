@@ -21,9 +21,9 @@ import cucumber.api.CucumberOptions;
 	"src/test/resources/features"
 }, tags =
 {
-	"~@cucumberIgnore", "@hello"
+	"~@cucumberIgnore"
 }, strict = true, dryRun = false )
-public class AppCucumber
+public class ApplicationIT
 {
 
 }

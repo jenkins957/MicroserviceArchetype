@@ -16,7 +16,7 @@ import ${package}.AppConfiguration;
 /*
  * Integration Test - Starting up full app
  */
-public class SayHelloTest
+public class SayHelloIT
 {
 	@ClassRule
 	public static final DropwizardAppRule<AppConfiguration> RULE = new DropwizardAppRule<AppConfiguration>( App.class );
