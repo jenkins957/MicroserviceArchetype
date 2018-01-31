@@ -17,7 +17,7 @@
 		<source>src/test/java/it/SayHelloIT.java</source>
 	</testSources>
 	<testResources>
-		<resource>src/test/resources/features/resource.feature</resource>
+		<resource>src/test/resources/features/sayhello.feature</resource>
 	</testResources>
 
 </archetype>

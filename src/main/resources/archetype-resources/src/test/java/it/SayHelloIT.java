@@ -32,8 +32,10 @@ public class SayHelloIT
 	@Test
 	public void shouldSayHello()
 	{
-		final String result = client.target( getUrl() ).request().get( String.class );
-		assertEquals( "Hello", result );
+		final String result = client.target( getUrl() ).
+                queryParam( "name", "MyName" ).request().get( String.class );
+
+		assertEquals( "Hello MyName", result );
 	}
 
 	private String getUrl()

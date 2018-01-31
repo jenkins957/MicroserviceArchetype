@@ -6,11 +6,10 @@ package ${package}.cucumber;
 import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
 import cucumber.api.CucumberOptions;
+import io.dropwizard.testing.DropwizardTestSupport;
+import net.beyondcoding.App;
+import net.beyondcoding.AppConfiguration;
 
-/**
- *
- * @author mikej
- */
 @RunWith( Cucumber.class )
 @CucumberOptions( plugin =
 {
@@ -25,5 +24,6 @@ import cucumber.api.CucumberOptions;
 }, strict = true, dryRun = false )
 public class ApplicationIT
 {
-
+    public static final DropwizardTestSupport<AppConfiguration> SUPPORT
+            = new DropwizardTestSupport<AppConfiguration>( App.class, "" );
 }

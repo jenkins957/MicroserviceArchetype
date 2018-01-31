@@ -16,17 +16,19 @@ public class HelloWorldResourceTest
 			.addResource( new HelloWorldResource() )
 			.build();
 
-	@Test
-	public void shouldSayHello()
+	public void shouldSayHelloFromApi()
 	{
-		final String result = RESOURCES.target( "/hello-world" ).request().get( String.class );
-		assertEquals( "Hello", result );
+		final String result = RESOURCES.target( "/hello-world" ).
+                queryParam( "name", "MyName" ).
+                request().get( String.class );
+
+        assertEquals( "Hello MyName", result );
 	}
 
 	@Test
-	public void shouldSayHello_2()
+	public void shouldSayHello()
 	{
 		final HelloWorldResource r = new HelloWorldResource();
-		assertEquals( "Hello", r.sayHello() );
+		assertEquals( "Hello MyName", r.sayHello( "MyName" ) );
 	}
 }

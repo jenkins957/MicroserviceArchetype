@@ -3,47 +3,54 @@
  */
 package ${package}.cucumber;
 
+import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import static org.junit.Assert.*;
-import ${package}.App;
-import ${package}.AppConfiguration;
 import javax.ws.rs.client.Client;
-import cucumber.api.java.en.Given;
+import cucumber.api.java.Before;
+import cucumber.api.java.After;
 import io.dropwizard.client.JerseyClientBuilder;
-import io.dropwizard.testing.DropwizardTestSupport;
 
-/**
- *
- * @author mikej
- */
 public class ResourceStepDefinitions
 {
-	public static final DropwizardTestSupport<AppConfiguration> SUPPORT
-			= new DropwizardTestSupport<AppConfiguration>( App.class, "");
+    private String person;
+    private String result;
 
-	private String result;
+    @Before
+    public void setup()
+    {
+        ApplicationIT.SUPPORT.before();
+    }
 
-	@Given( "^The app is running$" )
-	public void the_app_is_running() throws Throwable
-	{
-		SUPPORT.before();
-	}
+    @After
+    public void teardown()
+    {
+        ApplicationIT.SUPPORT.after();
+    }
 
-	@When( "^I check call say hello$" )
-	public void i_check_call_say_hello() throws Throwable
-	{
-		Client client = new JerseyClientBuilder( SUPPORT.getEnvironment() ).build( "test client" );
+    @Given( "^I have a Person called Nemo$" )
+    public void i_have_a_Person_called_Nemo() throws Throwable
+    {
+        person = "Nemo";
+    }
 
-		result = client.target(
-				String.format( "http://localhost:%d/hello-world", SUPPORT.getLocalPort() ) )
-				.request()
-				.get( String.class );
-	}
+    @When( "^they say hello$" )
+    public void they_say_hello() throws Throwable
+    {
+        final Client client = new JerseyClientBuilder(
+                ApplicationIT.SUPPORT.getEnvironment() ).build( "test client" );
 
-	@Then( "^hello is returned$" )
-	public void hello_is_returned() throws Throwable
-	{
-		assertEquals( "Hello", result );
-	}
+        result = client.target(
+                String.format( "http://localhost:%d/hello-world",
+                        ApplicationIT.SUPPORT.getLocalPort() ) ).
+                queryParam( "name", person ).
+                request().get( String.class );
+    }
+
+    @Then( "^the service says hello back$" )
+    public void the_service_says_hello_back() throws Throwable
+    {
+        assertEquals( "Hello " + person, result );
+    }
 }
