@@ -12,7 +12,7 @@ import cucumber.api.java.Before;
 import cucumber.api.java.After;
 import io.dropwizard.client.JerseyClientBuilder;
 
-public class ResourceStepDefinitions
+public class SayHelloStepDefinitions
 {
     private String person;
     private String result;
