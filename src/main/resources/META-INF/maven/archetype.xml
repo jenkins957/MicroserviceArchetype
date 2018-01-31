@@ -12,9 +12,9 @@
 		<source>src/test/java/AppHealthCheckTest.java</source>
 		<source>src/test/java/AppTest.java</source>
 		<source>src/test/java/HelloWorldResourceTest.java</source>
-		<source>src/test/java/cucumber/AppCucumber.java</source>
+		<source>src/test/java/cucumber/ApplicationIT.java</source>
 		<source>src/test/java/cucumber/ResourceStepDefinitions.java</source>
-		<source>src/test/java/it/SayHelloTest.java</source>
+		<source>src/test/java/it/SayHelloIT.java</source>
 	</testSources>
 	<testResources>
 		<resource>src/test/resources/features/resource.feature</resource>
