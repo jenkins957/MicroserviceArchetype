@@ -17,7 +17,7 @@ Aimed at developers, Integration tests usign JUnit.
  - JUnit (Developer Tests), *.IT.java
  - Cucumber (Stakeholder Tests), *.feature
 
-## Stakeholder Level Integration Tests (Acceptance Tests
+### Stakeholder Level Integration Tests (Acceptance Tests
 Stakeholder, Customer facing tests which can be used as documentation. Uses Cucumber framework to describe features.
 * Runs up application using in-memory Jersey server 
 
