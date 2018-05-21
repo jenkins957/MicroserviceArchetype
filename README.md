@@ -41,7 +41,7 @@ mvn archetype:generate -DarchetypeGroupId=net.beyondcoding \
 mvn clean package docker:build
 
 #### Run 
-docker run -p 8080:8080 beyondcoding.net/<name>
+docker run -p 8080:8080 beyondcoding.net/_imagename_
 
 
 
