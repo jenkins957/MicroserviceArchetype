@@ -36,11 +36,11 @@ mvn archetype:generate -DarchetypeGroupId=net.beyondcoding \
 
 ### Deploy
 
-#Maven image build
+####Maven image build
 
 mvn clean package docker:build
 
-#Run 
+####Run 
 docker run -p 8080:8080 beyondcoding.net/<name>
 
 
