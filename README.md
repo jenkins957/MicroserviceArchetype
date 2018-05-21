@@ -1,7 +1,8 @@
 # MicroserviceArchetype
 Maven archetype to create a simple dropwizard mircoservice.
-
 Generate a Microservice template project. Includes test framework at various levels;
+
+Test framework included and docker integration to create a docker image of the application (credit Spotify).
 
 ### Unit Tests
 - JUnit (Developer Tests), *.Test.java
@@ -32,3 +33,15 @@ mvn archetype:generate -DarchetypeGroupId=net.beyondcoding \
 -DarchetypeVersion=1.0 \
 -DgroupId=_groupId_ \
 -DartifactId=_projectName_
+
+### Deploy
+
+#Maven image build
+
+mvn clean package docker:build
+
+#Run 
+docker run -p 8080:8080 beyondcoding.net/<name>
+
+
+
