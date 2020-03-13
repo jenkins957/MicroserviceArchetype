@@ -31,8 +31,8 @@ mvn clean install
 mvn archetype:generate -DarchetypeGroupId=net.beyondcoding \
 -DarchetypeArtifactId=MicroserviceArchetype \
 -DarchetypeVersion=1.0 \
--DgroupId=_groupId_ \
--DartifactId=_projectName_
+-DgroupId=$groupId \
+-DartifactId=$projectName
 
 ### Deploy
 
