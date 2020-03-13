@@ -7,9 +7,9 @@
 	<packaging>jar</packaging>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.source>13</maven.compiler.source>
-		<maven.compiler.target>13</maven.compiler.target>
-		<dropwizard.version>2.0.2</dropwizard.version>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<dropwizard.version>1.2.0</dropwizard.version>
 		<!-- Jacoco & Sonar -->
 		<jacoco.version>0.7.9</jacoco.version>
 		<sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
@@ -194,7 +194,7 @@
 		<dependency>
 			<groupId>org.mockito</groupId>
 			<artifactId>mockito-core</artifactId>
-			<version>3.3.0</version>
+			<version>1.10.17</version>
 			<scope>test</scope>
 			<type>jar</type>
 		</dependency>
